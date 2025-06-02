@@ -4,7 +4,7 @@ function UserList({ token }) {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/users', {
+    fetch('https://user-management-frontend1.vercel.app/api/users', {
       headers: { Authorization: `Bearer ${token}` }
     })
     .then(res => res.json())
