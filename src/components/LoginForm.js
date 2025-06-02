@@ -6,7 +6,7 @@ function LoginForm({ setToken, setUser }) {
 
   const login = async (e) => {
     e.preventDefault();
-    const res = await fetch('https://user-management-frontend1.vercel.app/signup', {
+    const res = await fetch('https://user-management-frontend1.vercel.app/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
